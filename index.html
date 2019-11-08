@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Desmovilizados</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <br><br>
+        <h2>Personas Desmovilizadas</h2>
+        <!--form id="form" action="">
+            <div class="form-group">
+                <label for="depto">Departamento:</label>
+                <input type="text" class="form-control" id="depto" placeholder="Ingrese el Departamento" name="depto">
+            </div>
+            <div class="form-group">
+                <label for="anio">Año de desmovilizacion:</label>
+                <input type="number" class="form-control" id="anio" placeholder="Ingresa el año de desmovilizacion"
+                    name="anio">
+            </div>
+        </form-->
+        <input type="text" id="departamento">
+        <script>
+        function getDepartamento(){
+            var depto = document.getElementById("departamento").value;
+            return depto;
+        }
+        </script>
+        <button type="button" class="btn btn-primary" class="myButton" onclick="mostrarDatos(getDepartamento())">Mostrar Todos los Datos</button>
+        <button type="button" class="btn btn-warning" class="myButton" onclick="mostrarDatosRisaralda()">Mostrar los datos de Risaralda</button>
+        <button type="button" class="btn btn-success" class="myButton" onclick="desmovilizados2019()">Desmovilizados en 2019</button>
+        <!--button type="button" class="btn btn-danger" class="myButton" onclick="mostrarSumaDesmovilizados()">Total desmovilizados</button-->
+      
+        <li><a href="graficas.html">Grafica Risaralda</a></li>
+        <li><a href="grafica2019.html">Grafica 2019</a></li>
+
+        <table id="table1">
+            <thead></thead>
+        </table>
+
+
+    </div>
+
+</body>
+
+</html>
